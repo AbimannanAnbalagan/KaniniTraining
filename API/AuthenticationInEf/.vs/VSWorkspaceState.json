@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AuthenticationInEf",
+    "\\AuthenticationInEf\\Auth",
+    "\\AuthenticationInEf\\Controllers",
+    "\\AuthenticationInEf\\Migrations",
+    "\\AuthenticationInEf\\Properties"
+  ],
+  "SelectedNode": "\\AuthenticationInEf\\Properties\\launchSettings.json",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Relationship1.props" />
+</Project>

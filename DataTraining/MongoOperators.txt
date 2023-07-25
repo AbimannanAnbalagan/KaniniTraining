@@ -1,0 +1,30 @@
+or:
+db.trips.find({$or:[{"tripduration":379},{"bikeid":17827}]}).pretty()
+And:
+db.trips.find({$and:[{"tripduration":379},{"bikeid":17827}]}).pretty()
+with projection:
+db.grades.find({"class_id":{$in:[339]},"student_id":0},{"student_id":1,"class_id":1}).pretty()
+not18:36 24-07-202318:36 24-07-202318:36 24-07-2023
+db.routes.find({stops:{$not:{$eq:0}}}).pretty()
+Not Equal:
+db.routes.find({stops:{$ne:0}}).pretty()
+Not in:
+db.grades.find({"class_id":{$nin:[339]},"student_id":0},{"student_id":1,"class_id":1}).pretty()
+Greater than:
+db.routes.find({stops:{$gt:0}}).pretty()
+Greater than or equal:
+db.routes.find({stops:{$gte:0}}).pretty()
+Less than:
+db.routes.find({stops:{$lt:1}}).pretty()
+Less than or equal:
+db.routes.find({stops:{$lte:1}}).pretty()
+
+Querying Arrays
+$all
+insert insert many
+$exists
+delete delete many
+update update many
+Delete column rename column
+add element in array($push)
+$inc

@@ -1,0 +1,911 @@
+MONGO DB
+--------
+
+mongodb is no-sql Document Database.
+
+mongodb does have database, and inside database we have collections and collection holds documents
+
+{
+  "_id": 101,
+  "name": "pavan",
+  "email": "pavan.irmc@gmail.com"
+  "address": "xyz
+
+}
+
+{
+  "_id": 101,
+  "name": "pavan",
+  "email": "pavan.irmc@gmail.com"
+  "phone": "9618384659"
+
+}
+
+MONGODB TUTORIALS
+-----------------
+
+
+
+What is MongoDB?
+
+MongoDB is an open-source, document-oriented, and one of the most popular NoSQL databases. 
+NoSQL simply means a non-relational database 
+i.e. there is no table-like relational database structure instead there is a totally different mechanism for storing and retrieving data. 
+This format of storage is called BSON and is very much similar to JSON.
+
+
+
+How do Document Databases Work?
+
+
+A document database has information retrieved or stored in the form of a document or other words semi-structured database. Since they are non-relational, 
+so they are often referred to as NoSQL data. 
+
+The document database fetches and accumulates data in forms of key-value pairs but here, the values are called as Documents. 
+A document can be stated as a complex data structure. Document here can be a form of text, arrays, strings, JSON, XML, or any such format. 
+The use of nested documents is also very common. It is very effective as most of the data created is usually in the form of JSON and is unstructured.
+
+
+
+Advantages
+Document databases are both natural and flexible for developers to work with.
+
+ They offer higher productivity and faster evolution for a developer. 
+Document databases are easier to store and query data in a database for a developers by using the same document-model format they use in their application code. 
+For use cases such as catalogs, user profiles, and content management systems where each document is unique and evolves over time, 
+it is much better to use document model. 
+Document databases provide flexible indexing, powerful ad hoc queries, and analytics over collections of documents.
+
+
+Disadvantages
+Handling multiple documents is challenging
+Aggregation operations may not work accurately
+
+
+
+
+MongoDB is an open-source document-oriented database. It is used to store a larger amount of data and also allows you to work with that data.
+ MongoDB is not based on the table-like relational database structure but provides an altogether different mechanism for storage and retrieval of data, 
+ that’s why known as NoSQL database.
+ Here, the term ‘NoSQL’ means ‘non-relational’. The format of storage is called BSON ( similar to JSON format).
+ 
+ 
+ important parts of MongoDB –
+ 
+ 
+Drivers: Drivers are present on your server that are used to communicate with MongoDB. 
+The drivers support by the MongoDB are C, C++, C#, and .Net, Go, Java, Node.js, Perl, PHP, Python, Motor, Ruby, Scala, Swift, Mongoid.
+
+
+
+MongoDB Shell: MongoDB Shell or mongo shell is an interactive JavaScript interface for MongoDB. It is used for queries, 
+data updates, and it also performs administrative operations.
+
+Storage Engine: It is an important part of MongoDB which is generally used to manage how data is stored in the memory and on the disk. 
+MongoDB can have multiple search engines. 
+You are allowed to use your own search engine and if you don’t want to use your own search engine you can use the default search engine,
+
+
+
+MongoDB work in two layers –
+
+Application Layer and
+Data layer
+
+
+
+Application Layer is also known as the Final Abstraction Layer, it has two-parts, first is a Frontend (User Interface) and the second is Backend (server). 
+The frontend is the place where the user uses MongoDB with the help of a Web or Mobile.
+
+
+These queries are sent to the MongoDB server present in the Data Layer. Now, the MongoDB server receives the queries and passes the received queries to the storage engine. MongoDB server itself does not directly read or write the data to the files or disk or memory. After passing the received queries to the storage engine, 
+the storage engine is responsible to read or write the data in the files or memory basically it manages the data.
+
+
+
+ RDBMS vs MongoDB:
+ 
+ 
+ RDBMS has a typical schema design that shows number of tables and the relationship between these tables whereas MongoDB is document-oriented.
+ There is no concept of schema or relationship.
+ 
+ 
+ Complex transactions are not supported in MongoDB because complex join operations are not available.
+ 
+ MongoDB allows a highly flexible and scalable document structure. 
+ For example, one data document of a collection in MongoDB can have two fields whereas the other document in the same collection can have four.
+ 
+ 
+ MongoDB is faster as compared to RDBMS due to efficient indexing and storage techniques.
+ 
+ 
+ There are a few terms that are related in both databases. What’s called Table in RDBMS is called a Collection in MongoDB. Similarly, 
+ a Row is called a Document and a Column is called a Field. MongoDB provides a default ‘_id’ (if not provided explicitly)
+ which is a 12-byte hexadecimal number that assures the uniqueness of every document. 
+ It is similar to the Primary key in RDBMS.
+ 
+ 
+ 
+ 
+ 
+ Features of MongoDB:
+ 
+ 
+ Document Oriented:
+ 
+ MongoDB stores the main subject in the minimal number of documents and not by breaking it up into multiple relational structures like RDBMS. 
+ For example, it stores all the information of a computer in a single document called Computer and not in distinct relational structures 
+ like CPU, RAM, Hard disk, etc.
+ 
+ 
+ 
+ Indexing:
+ 
+ Without indexing, a database would have to scan every document of a collection to select those that match the query which would be inefficient. 
+ So, for efficient searching Indexing is a must and MongoDB uses it to process huge volumes of data in very less time.
+ 
+ 
+ Scalability:
+ 
+ MongoDB scales horizontally using sharding (partitioning data across various servers).
+ 
+ 
+ Replication and High Availability:
+ 
+ MongoDB increases the data availability with multiple copies of data on different servers.
+ 
+ 
+ Aggregation:
+ 
+ ggregation operations process data records and return the computed results. It is similar to the GROUPBY clause in SQL. 
+ 
+
+
+mongodb can have different fields in documents in same collection, it is not restricted to any schema,
+Documents are polymorphic, that means they do not have fixed structure, change can be made easily to individual document structures.
+
+mongodb is schemaless, whereas rdbms does have fixed schema
+
+In general data is stored more flexible and efficiently stored in mongodb rather than sql, because it is schemaless resulting in less data redundancy
+and more efficieny
+
+
+DOCUMENTS IN MONGODB
+
+DATABASE --> COLLECTION --> DOCUMENTS
+
+DOCUMENT IN COLLECTION IS IN JSON FORMAT
+
+key value seperated by ',' and key and value always double quoted.
+
+{
+  "_id": 101,
+  "name": "pavan",
+  "email": "pavan.irmc@gmail.com"
+  "address": "xyz
+
+}
+
+
+"_id" fields are unique identifier, if we don't specify it, it will populate it automatically
+
+SUBDOCUMENT (Nested Document)
+
+
+{
+  "_id": 101,
+  "name": "pavan",
+  "email": "pavan.irmc@gmail.com"
+  "phone" : ["9618384659", "9000793544"],
+  "address": {
+                 "street": "cl villas",
+				 "state": "hyderabad",
+				 "zip": "500086"
+             }
+} 
+
+
+we can add arrays of value to my fields
+
+MONGODB support various data types
+
+1. NUMERIC
+
+2. DATE AND TIME
+
+3. STRING
+
+
+
+MONGODB ECOSYSTEM
+-----------------
+
+PRIMARLY  MONGODBDATABASE (ON PREMISE SOLUMTION)
+1. COMMUNITY
+2. ENTERPRICE
+
+
+ATLAS (CLOUD SOLUTION)
+REALM
+CHART
+
+DATABASE TOOLS
+1.SHELL
+2.MONGODB DRIVERS
+3.AI CONNECTORS ( ALLOW YOU TO CONNECT TO TABLEAU, CLIQVIEW)
+
+COMPASS
+IS GUI TOOLS
+
+
+
+COMMON DEPLOYMENT OF MONGO DB
+
+REPLICA SET AND SHARDED CLUSTER
+
+
+REPLICA SET maintain 3 instances of computer and each replica maintain full copy of data in each instances
+in case of failure of one computer we have two more copy.
+
+
+SHARDED CLUSTER
+---------------
+IT is essentially partition of databases, which split your data across instances
+
+IT Does have 3 imp components
+
+1. SHARD  ( CONTAINING PARTITION OF DATA)
+
+2. MONGOS  ( INTERFACE BETWEEN ANY APPLICATION USING MONGODB AND SHARDED CLUSTER
+
+3. CONFIG SERVERS: ( STORES METADATA AND CONFIGURATION SETTINGS)
+
+
+
+ALL THIS ABOVE MAKE MONGODB NATIVELY DISTRIBUTED SYSTEM.
+
+ILLUSTRATION
+
+
+KEY BENIFITS DISTRIBUTING DATA
+
+1. FAULT TOLLEARNACE ( MULTIPLE REPLICA)
+
+2. SCALABILITY
+
+3. MOVE DATA CLOSER TO USER ( IF YOU HAVE USER NEAR TO EUROPE AND AMERICA, YOU CAN DEPLOY YOUR CLUSTER TO NORT AMERICA)
+
+
+ADVANTAGES OF MONGODB
+---------------------
+
+1. LESS COMPLEXITY VS RDBMS ( IN REGULAR RDBMS, MULTIPLE DATA STORED IN MULTIPLE TABLES, AND IF YOU WANT TO ACCESS DATA MULTIPLE TABLE JOINS IS REQUIRED)
+
+2. POLYMORPHIC
+
+3. EASIER TO MAINTAIN
+
+4. EASY TO SCALE
+
+
+MONGODB QUERY LANGUAGE
+----------------------
+
+mql is imperitive language, you tell what to do rather than how to do
+
+designed for single queries across single collection
+
+
+for complex query's we have  AGGREGATION PIPELINE 
+
+AGGREGATION PIPELINE will help you to do complex queries.
+
+
+"C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe" --version
+
+"C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
+
+
+# CREATING AND DELETING DATABASE AND COLLECTIONS
+
+SHOWING DATABASES
+show dbs
+
+SHOWING COLLECTIONS
+show collections
+
+MAKING DATABASE AS CURRENT DATABASE
+use sampl_database
+
+
+# IF WE USE DB WHICH IS NOT EXISTED, MONGO WILL CREATE NEW DATABASE AND IT WILL BE APPEAR ONCE YOU INCLUDE COLLECTION
+
+use test_db
+
+# CREATING COLLECTION
+
+syntax:
+
+db.createCollection(name, options)
+
+db.createCollection("mycollection")
+
+
+#DROPPING COLLECTION
+syntax:
+
+db.collection_name.drop()
+
+db.mycollection.drop()
+
+# DROPPING DATABASE ( NEED TO BE CURRENT DATABASE)
+
+db.dropDatabase()
+
+
+# USING FINDONE AND FINDONE
+
+syntax:
+db.collection.findOne(query, projection)
+
+
+findOne()  this method return one document from the collection you have specified
+
+db.grades.findOne()
+
+
+find()  is same as findOne() except it returns a cursor to select document
+
+syntax:
+db.collection.find()
+
+
+db.grades.find()
+
+
+type it for more 20 document
+
+
+
+#NOW USING QUERY OPTIONS OF find, findOne
+
+# returning all id with class_id 325
+
+db.grades.find({"class_id" : 325})
+
+# getting all data with student_id 
+
+db.grades.find({student_id: 1000})
+
+
+# IF WE WANT TO APPLY 2 CONDITIONS
+
+db.grades.find({"class_id":270, "student_id":1})
+
+
+
+$ SYMBOL IN MQL
+
+
+1 $ USE WITH  Opperator precedance
+
+$lt  ( less than <) you can not use '<' this opperator
+
+syntax:
+
+{"field" : {operator:value})
+
+{"salary" : {$lt : 50000})
+
+
+2: USE $ PRECEDS WITH FIELDS
+
+
+3: USE $ AGGREGATE PIPELINE
+
+
+
+
+
+COMPARISON OPPERATORS
+---------------------
+
+$eq   = equal to
+$ne   = not equal to
+$gt		greater than
+$gte	greater equal to
+$lt		less than
+$lte	less or equal to
+$in		membership
+
+
+db.trips.find({"start station id": {})
+
+
+db.trips.find({"start station id": {$in:[284, 532]}})
+
+
+LOGICAL OPPERATORS
+------------------
+# $and
+
+{ operator:[{condition1}, {condition2}]}
+
+
+# $or
+
+{ operator:[{condition1}, {condition2}]}
+
+# $nor
+
+{ operator:[{condition1}, {condition2}]}
+
+
+# $not
+
+{$not : {condition}}
+
+
+
+# $and
+
+
+{ $and: [ { Expression1 }, { Expression2 }, ..., { ExpressionN } ] }
+or
+{ { Expression1 }, { Expression2 }, ..., { ExpressionN }}
+
+
+db.contributor.find({$and: [{branch: "CSE"},
+							{joiningYear: 2018}]}).pretty()
+							
+							
+db.contributor.find({branch: {$eq: "CSE", $exists: true}}).pretty()
+
+
+db.trips.find({$and: [{"usertype": "Subscriber"},{"birth year": 1969}]})
+
+
+db.trips.find({$and: [{"tripduration": {$gt:400}}, {"birth year" : {$gt: 1965}}]})
+
+
+db.trips.find({"tripduration", {$gte: 400}, {"birth year" : {$gt: 1969})
+
+
+db.trips.find({"tripduration": {$gt:300},"birth year": {$gt: 1965}})
+
+
+# since we are using same column name in and condition first expression will be overriden by another in this case use $and explicitly
+
+db.trips.find({"tripduration": {$lt:400},"tripduration": {$gt: 300}}).pretty()
+
+db.trips.find({"tripduration": {$lt:400,$gt: 300}}).pretty()
+
+
+
+
+
+
+
+
+
+
+Syntax:  
+
+{ $or: [ { Expression1 }, { Expression2 }, ..., { ExpressionN } ] }
+
+
+db.contributor.find({$or: [{branch: "ECE"},
+					{joiningYear: 2017}]}).pretty()
+					
+					
+db.contributor.find({$or: [{"personal.age": 24},
+					{"personal.state": "Delhi"}]}).pretty()
+					
+db.trips.find({$or: [{"tripduration":{$gt: 4000}}, {"birth year" : {$lt: 1950}}]})
+
+
+
+db.trips.find({$nor: [{"tripduration":{$gt: 4000}}, {"birth year" : {$lt: 1950}}]})
+					
+					
+					
+
+
+
+
+# $not
+
+{ field: { $not: { operator-expression } } }
+
+
+
+db.contributor.find({salary: {$not: {$gt: 2000}}}).pretty()
+
+
+db.contributor.find({"personal.age": {$not: {$eq: 24}}}).pretty()
+
+db.trips.find({"birth year" : {$ne:1965}})
+
+
+
+ELEMENT OPPERATORS
+------------------
+
+$exists
+
+return document which consist of specific fields
+
+db.collection.find({field : {$exists : <boolean>}})
+
+db.companies.find({"ipo": {$exists : true}})
+
+db.companies.find({"ipo": {$exists : true}, "funding_rounds" : {$exists: true}})
+
+
+
+
+
+
+$type
+
+return value that contain value of specific type
+
+db.collection.find({field : {$type : <bson datatype>}})
+
+db.collection.find({field : {$type : [<bson datatype>, <bson datatype]}})
+
+# we need to see data type sequence for ex string is 2 and null is 10
+db.companies.find({"homepage_url": {$type: 2}})
+
+
+db.companies.find({"homepage_url": {$type: 10}})
+
+
+
+CURSORS METHOD
+--------------
+
+count()
+sort({parameters})  -1 desc  1 asc
+limit(no of records)
+skip()
+size() same as count but used along with limit and skip
+
+db.companies.find({"homepage_url": {$type: 10}}).count()
+
+db.companies.find().sort({"number_of_employees": -1})
+
+limit()
+
+db.companies.find({"homepage_url": {$type: 10}}).limit(5)
+
+skipping 10 records
+
+db.companies.find({"homepage_url": {$type: 10}}).skip(5)
+
+
+db.companies.find({"homepage_url": {$type: 10}}).skip(5).size()
+
+
+
+
+PROJECTION
+----------
+
+db.collection.find({query}, {projection})
+
+db.companies.find({}, {"name":1, "founded_year": 1})
+
+db.companies.find({}, {"name":1, "founded_year": 1, "_id": 0})
+
+
+
+WORKING WITH EMBEDDED DOCUMENTS
+
+db.inspections.findOne()
+
+db.inspections.find({"address.zip": 11427})
+
+
+QUERYING ARRAYS
+
+
+db.posts.findOne({}, {"tags":1})
+
+db.posts.find({"tags":"roof"}, {"tags":1})
+
+if you want the same order as arrays
+
+db.posts.find({"tags":  [ "current", "quartz", "textbook", "bus", "roof", "lentil", "flute", "mile", "spain", "sagittarius" ]},{"tags":1})
+
+
+$all
+
+return all documents where value of fields is an array that contain all specified elements and ordering does not matter here
+
+
+db.collection.find(field: {$all: [value1, value2]}
+
+db.posts.find({"tags":  {$all:[ "current", "quartz", "textbook" ]}},{"tags":1})
+
+$size
+how many element does have 10 elements in array
+
+
+db.posts.find({"tags" : {$size: 10}}).count()
+
+
+db.grades.find({"scores.type":"exam"})
+
+
+$elemMatch
+return element that contains array field with an element that has matching criteria
+
+embedded doc where we want to find type exam and scord more than 80
+
+db.grades.find({"scores": {$elemMatch: { "type": "exam", "score": {$gt:80}}}})
+
+
+INSERT
+-------
+
+syntax:
+
+db.collection.insert( <document or array of documents>
+
+db.testcollection.insertMany([{"name": "pavan reddy", "role":"Instructor"}, {"name": "karthiban", "role":"student"}])
+
+db.testcollection.insert({"_id":1001,"name": "pavan reddy", "role":"Instructor"})
+
+db.testcollection.insert({"_id":1002,"name": "pavan reddy", "tech":["pyspark", "hadoop","kafka", "aws", "mongodb"]})
+
+db.testcollection.insert([{"_id":1003,"name": "pavan reddy", "role":"Instructor"},{"_id":1002,"name": "pavan reddy", "tech":["pyspark", "hadoop","kafka", "aws", "mongodb"]}])
+
+INSERT ARRAY OF OBJECTS:
+db.mycollections.insert({"id":8,"name":"Abimannan","details":[{"height":175,"weight":54},{"footsize":9,"hipsize":3}]})
+
+
+DELETE
+------
+
+ db.testcollection.deleteOne({"name":"pavan reddy"})
+ 
+ db.testcollection.deleteMany({"name":"pavan reddy"})
+ 
+ 
+UPDATE
+------
+
+updateOne
+updateMany
+
+db.collection.updateOne({filter}, {update}, {options})
+
+
+db.people.insertMany([
+	{ name: "Samantha Owen", profession: "chef" ,age: 24, hobbies_list: ["puzzles", "travelling"] },
+	{ name: "Pratik Shah ", profession: "chef" ,age: 51, hobbies_list: ["sports"] },
+	{ name: "Jack Ross", profession: "doctor" ,age: 33, hobbies_list: ["cooking", "reading", "sports"] },
+	{ name: "Meera Patel", profession: "doctor" ,age: 37, hobbies_list: ["travelling"] },
+	{ name: "Alex Bell", profession: "accountant" ,age: 26, hobbies_list: ["movies", "sports"] },
+	{ name: "Jose Ramon", profession: "architect" ,age: 43, hobbies_list: ["cooking", "reading", "painting"] },
+	{ name: "Jess Raymond", profession: "accountant" ,age: 40, hobbies_list: []},
+])
+ 
+ 
+db.people.updateMany({"profession": "chef"}, {$set: {"profession":"cook"}})
+db.people.updateOne({"name":"Pratik Shah "}, {$set: {"hobbies_list": ["cooking", "reading", "sports"]}})
+
+droping an age field and renaming to hobbies using update opperators
+db.people.updateMany({}, {$unset: {"age":""},$rename:{"hobbies_list":"hobbies"}})
+
+db.people.updateMany({"name": "Samantha Owen"}, {$push:{"hobbies":"dancing"}})
+
+if I want to increment year with one
+
+db.people1.insertMany([
+	{ name: "Samantha Owen", profession: "chef" ,age: 24, hobbies_list: ["puzzles", "travelling"] },
+	{ name: "Pratik Shah ", profession: "chef" ,age: 51, hobbies_list: ["sports"] },
+	{ name: "Jack Ross", profession: "doctor" ,age: 33, hobbies_list: ["cooking", "reading", "sports"] },
+	{ name: "Meera Patel", profession: "doctor" ,age: 37, hobbies_list: ["travelling"] },
+	{ name: "Alex Bell", profession: "accountant" ,age: 26, hobbies_list: ["movies", "sports"] },
+	{ name: "Jose Ramon", profession: "architect" ,age: 43, hobbies_list: ["cooking", "reading", "painting"] },
+	{ name: "Jess Raymond", profession: "accountant" ,age: 40, hobbies_list: []},
+])
+
+db.people1.insertMany({},{$inc: {"age":1}})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ARTHIMATIC OPPERATORS
+---------------------
+
+{ $add: [ <Expression1>, <Expression2>, ... <ExpressionN>] }
+
+
+
+ MongoDb CRUD Opperations Practicals
+------------------------------
+DOCUMENT IN MONGO DB
+{
+        "_id" : ObjectId("60c87b37ee3acb0dd8fa6c12"),
+        "coursename" : "hadoop",
+        "type" : "bigdata",
+        "batch" : 296,
+        "ct" : true
+}
+
+
+1. CREATE A DATABASE
+
+USE batch297db
+
+2. creating Collection
+
+db.createCollection("pavanCollection")
+
+
+3. Insert only one Document
+
+db.pavanCollection.insertOne({"coursename" : "hadoop",
+        "type" : "bigdata",
+        "batch" : 296,
+        "ct" : true})
+
+
+
+4. find any documnet
+
+db.pavanCollection.find().pretty()
+
+
+
+
+CRUD  ( Create    Read          U            D)
+
+5. // INSERT MULTIPLE RECORDS
+
+db.pavancollection.insertMany([{coursename:"Mongodb",type:"Nosqldb",batch:297,ct:true}, {coursename:"Hbase",type:"Nosqldb",batch:298,ct:false}])
+
+
+
+6. // READING DATA FROM MONGODB
+
+db.collectionname.find(query, projection)
+
+
+b: get only hadoop column document
+
+
+db.pavancollection.find({coursename:"hadoop"})
+
+db.pavancollection.find({type:"Nosqldb"}).pretty()
+
+{ "_id" : ObjectId("60c87e64ee3acb0dd8fa6c15"), "coursename" : "Mongodb", "type" : "Nosqldb", "batch" : 297, "ct" : true }
+{ "_id" : ObjectId("60c87e64ee3acb0dd8fa6c16"), "coursename" : "Hbase", "type" : "Nosqldb", "batch" : 298, "ct" : false }
+
+
+c: show only one col from my query
+
+db.pavancollection.find({type:"Nosqldb"}, {coursename:1})
+
+ db.pavancollection.find({type:"Nosqldb"}, {coursename:1})
+{ "_id" : ObjectId("60c87e64ee3acb0dd8fa6c15"), "coursename" : "Mongodb" }
+{ "_id" : ObjectId("60c87e64ee3acb0dd8fa6c16"), "coursename" : "Hbase" }
+
+
+d: extension of c  iwant to remove system generated id as well
+
+db.pavancollection.find({type:"Nosqldb"}, {_id:0,coursename:1})
+
+
+e: get filter one column and if i have multiple match  I want the first value
+
+
+db.pavancollection.find({ct:true}).pretty().limit(1)
+
+
+f: I want my filter query 2nd match
+
+db.pavancollection.find({type:"Nosqldb"}).limit(1).skip(1)
+
+
+UPDATES
+----------
+
+// UPDATE MY MATCH CONDITION FIRST VALUE
+
+db.collectionname.updateOne(<filter>, <update>)
+
+db.pavancollection.updateOne({type:"Nosqldb"},{$set: {ct:false}})
+
+
+db.pavancollection.updateMany({type:"Nosqldb"},{$set: {type:"nosqlparadise"}})
+
+
+
+
+DELETE
+=======
+
+db.collectionname.deleteMany({delete criteria})
+
+db.pavancollection.deleteMany({type:"nosqlparadise"})
+
+db.pavancollection.deleteMany({})
+
+
+Indexing
+
+db.mynewcollection.ensureIndex({"student_id: 1"})
+
+db.mynewcollection.find("student_id":100000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+sqoop export --connect jdbc:mysql://localhost/export_dir --username root --password cloudera --table orders --export-dir sqoop_tempdir3;
+
+sqoop import --connect jdbc:mysql://localhost/export_dir --username root --password cloudera --table orders --target-dir newdir;

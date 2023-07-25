@@ -1,0 +1,23 @@
+create table Crime (Area_Name string , Year int , Group_Name string , Sub_Group_Name string ,Cases_Property_Recovered int , Cases_Property_stolen int ,Value_Of_Property_Recovered int ,Value_Of_Property_Stolen int);
+
+/home/cloudera/archive
+
+Hive Commands:
+
+Create Table:
+create table IndianCrime (Area_Name string , Year int , Group_Name string , Sub_Group_Name string , Cases_Property_Recovered int , Cases_Property_Stolen int , Value_Of_Property_Recovered int , Value_Of_Property_Stolen int)
+row format delimited
+fields terminated by ',';
+//stored as avro;
+
+Load Data: load data local inpath '/home/cloudera/archive/10_Property_stolen_and_recovered.csv' into table IndianCrime;
+
+Load from another table:
+insert overwrite table Newtable 
+select * from sourceTable
+
+Read:
+Select * from IndianCrime Where Area_Name = 'Tamil Nadu';
+
+--dfs -ls /user/hive/warehouse/crimeorc;
+

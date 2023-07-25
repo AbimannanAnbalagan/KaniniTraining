@@ -1,0 +1,93 @@
+
+Inner Join:
+select c.cust_id , c.Age, b.card_number , b.card_limit  from customerbase as c inner join cardbase as b on c.cust_id = b.cust_id
+
+CC55858	30	2868-5606-5152-5706	27000
+CC46077	49	6876-7378-4945-3251	44000
+CC46484	49	5556-4557-4566-1540	45000
+CC59340	25	5618-9718-9367-2102	14000
+CC62994	48	1652-7516-1273-1992	180000
+CC43841	30	7212-8665-7734-5918	55000
+CC21312	45	7837-4036-5999-1672	24000
+CC90510	33	6262-7793-5307-8561	542000
+
+Left join
+
+select c.cust_id , c.Age, b.card_number , b.card_limit  from customerbase as c left join cardbase as b on c.cust_id = b.cust_id
+
+73883	28	7811-4511-7664-6960	26000
+CC20512	38	NULL	NULL
+CC61699	39	NULL	NULL
+
+right join 
+
+select c.cust_id , c.Age, b.card_number , b.card_limit  from customerbase as c right join cardbase as b on c.cust_id = b.cust_id
+
+CC67088	27	8638-5407-3631-8196	530000
+CC12076	48	7106-4239-7093-1515	18000
+CC97173	22	6492-5655-8241-3530	596000
+CC55858	30	2868-5606-5152-5706	27000
+CC90518	50	1438-6906-2509-8219	142000
+CC49168	22	2764-7023-8396-5255	50000
+
+outer join
+
+select c.cust_id , c.Age, b.card_number , b.card_limit  from customerbase as c full outer join cardbase as b on c.cust_id = b.cust_id
+
+306	24	6016-6956-6981-3103	148000
+CC99310	43	NULL	NULL
+CC99313	48	NULL	NULL
+CC99335	46	NULL	NULL
+CC99343	31	NULL	NULL
+CC99371	26	NULL	NULL
+CC99402	23	5864-4475-3659-1440	2000
+
+cross join
+
+select * from CustomerBase cross join CardBase;
+
+CC46844	21	Gold	VG3	6893-1438-6516-3207	Premium	315000	CC13421
+CC46844	21	Gold	VG3	3440-3330-5015-4988	Premium	549000	CC28038
+CC46844	21	Gold	VG3	6262-7793-5307-8561	Premium	542000	CC90510
+CC46844	21	Gold	VG3	8135-1903-7706-2260	Premium	307000	CC52705
+CC46844	21	Gold	VG3	6171-3568-7740-8072	Premium	325000	CC35449
+CC46844	21	Gold	VG3	8321-8463-7644-8934	Premium	790000	CC78536
+CC46844	21	Gold	VG3	5144-5591-4640-2208	Premium	657000	CC17602
+
+View:
+
+create view Viewone asselect c.cust_id , c.Age, b.card_number , b.card_limit  from customerbase as c full outer join cardbase as b on c.cust_id = b.cust_id;
+
+CC17004	41	8509-8871-7296-2015	48000
+CC59562	39	9157-2802-8374-1145	656000
+CC15336	25	2046-1892-2379-9050	313000
+CC30954	49	9558-5469-2562-5608	596000
+CC13567	44	1159-7886-1385-5540	163000
+CC42937	30	7633-7985-2079-2990	196000
+
+HDFS:
+
+List files and directories in HDFS:
+dfs -ls /user/hive/warehouse;
+
+Create a new directory in HDFS:
+dfs -mkdir /user/hive/warehouse/newmkdir;
+
+Copy a file from the local file system to HDFS:
+dfs -put /path/to/local_file /path/in/hdfs;
+
+Copy a file from HDFS to the local file system:
+dfs -get /path/in/hdfs /path/to/local_file;
+
+Copy a file from HDFS to the local file system:
+ dfs -get /path/in/hdfs /path/to/local_file
+
+Remove a file or directory from HDFS:
+ dfs -rm /path/to/file_or_directory
+
+Copy files within HDFS:
+ dfs -cp /source_path /destination_path
+
+Check the file content in HDFS:
+ dfs -cat /path/to/file
+

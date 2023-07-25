@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gym_page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <style>
+
+        .words {
+            text-align: center;
+            font-size: 18px;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+
+        .button1 {
+            text-align: center;
+            margin-top: 2%;
+            color: rgb(17, 136, 89);
+        }
+
+        .texts {
+            margin-top: 4%;
+            text-align: center;
+        }
+
+        .text1 {
+            font-size: 40px;
+            color: rgb(59, 127, 105);
+        }
+
+        .text2 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+        }
+
+        .card_head {
+            text-align: center;
+            color: rgb(59, 127, 105);
+        }
+
+        .card-body {
+            background-color: rgb(233, 231, 231) !important;
+        }
+        .card .card-text{
+            text-align: center;
+        }
+
+        .card_buttons {
+            text-align: center;
+            
+        }
+
+        .transformation .transform_head {
+            text-align: center;
+            margin-top: 4%;
+            color: rgb(40, 85, 70);
+        }
+
+        .transformation_imag {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+
+        .transformation_para {
+            text-align: center;
+            padding: 2% 12% 0% 12%;
+            font-size: 18px;
+        }
+
+        .heading {
+            color: rgb(59, 127, 105);
+        }
+
+        .trainers h1 {
+            text-align: center;
+            color: rgb(59, 127, 105);
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 4%;
+        }
+
+        .trainers h4 {
+            font-size: 18px;
+            margin-top: 2%;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .trainers p {
+            font-size: 15px;
+            margin-top: 2%;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .trainers_row2{
+            margin-top: 8%;
+            justify-content: center;
+
+        }
+        .trainers_row1{
+            justify-content: center;
+            color: rgb(59, 127, 105);
+        }
+        .trainers .card-title{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:rgb(0, 0, 0);
+        }
+        header .title{
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 40px;
+            background-color: rgb(119, 142, 134);
+            text-align: center;
+            padding: 16px;
+            margin-top: 0px;
+
+        }
+         nav{
+            background-color: rgb(215, 212, 212);
+            margin-top: 0px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        } 
+
+        .navigation ul{
+            display:flex;
+            list-style: none;
+            padding: 20px;
+            
+        }
+        .navigation .links{
+            
+            padding: 3px;
+        }
+        .navigation .links li{
+            padding: 2px;
+            font-size: 25px;
+        }
+        .navigation .links li button{
+            width: 70px;
+            
+        }
+        footer .footer1{
+            margin-top: 8%;
+            background-color:rgb(215, 215, 215) ;
+            padding: 1%;
+            text-align: center;
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+        .connect_logo{
+            display: flex;
+            align-items: center;
+        }
+        .footer2{
+            background-color: rgb(119, 142, 134);
+
+        }
+        .footer2 .text{
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 12px;
+        }
+        /* footer .footer1{
+            margin-top: 15%;
+            background-color:rgb(215, 215, 215) ;
+            padding: 1%;
+            text-align: center;
+            font-size: 20px;
+
+        }
+        .footer2{
+            background-color: rgb(91, 121, 111);
+            
+
+        }
+        .footer2 .text{
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 12px;
+        }
+        header h1{
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 40px;
+            background-color: rgb(152, 176, 168);
+            text-align: center;
+            padding: 45px;
+
+        }
+        .navigation{
+            background-color: rgb(215, 212, 212);
+            margin-top: 0;
+            padding: 6px;
+        }
+        #logo_header{
+            size:50%;
+        } 
+        
+        header .title {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 40px;
+            background-color: rgb(119, 142, 134);
+            text-align: center;
+            padding: 16px;
+            margin-top: 0px;
+
+        }
+
+        nav {
+            background-color: rgb(215, 212, 212);
+            margin-top: 0px;
+        }
+
+        .navigation {
+            display: flex;
+            margin-bottom: 0;
+        }
+
+        .navigation ul {
+            display: flex;
+            list-style: none;
+            padding: 20px;
+
+        }
+
+        .navigation .links {
+            margin-left: 40%;
+            padding: 3px;
+        }
+
+        .navigation .links li {
+            margin-left: 5px;
+            padding: 2px;
+            font-size: 25px;
+        }
+
+        .navigation .links li button {
+            width: 70px;
+
+        }
+        .gym_img img{
+            width: 1473px;
+        } */
+</style>
+    <!-- <header>
+        <h1>EMBODY PVT. LTD</h1>
+        <nav class="navbar navbar-expand navigation">
+            <div class="container-fluid ">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <img src="./embody_logo.png" id="logo_header" >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header> -->
+    <header>
+        <div class="title">EMBODY PVT. LTD</div>
+
+        <nav class="navigation">
+            <div class="image"><img src="./embody_logo.png"></div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <buttton class="btn btn-outline-secondary"><b>HOME</b></buttton>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <buttton class="btn btn-outline-secondary"><b>Online Training</b></buttton>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <buttton class="btn btn-outline-secondary"><b>BMI Calculator</b></buttton>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <buttton class="btn btn-outline-secondary"><b>About Us</b></buttton>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><button class="btn btn-outline-secondary"><b>SignUp</b></button></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <button class="btn btn-outline-secondary"><b>FAQ</b></button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="gym_img">
+        <img src="./Embody-Fitness-001.jpeg" alt="image" width="100%">
+    </div>
+
+    <div class="words"><b>Our expert team of personal trainers, nutritionists and sports therapists will work with you
+            to ensure you achieve the results of your life through our fully personalised 8 and 12-week body
+            transformation
+            programmes.</b>
+    </div>
+    <div class="button1">
+        <a href="#training"><button type="button" class="btn btn-warning">Book a Free Consultant</button></a>
+    </div>
+    <div class="texts">
+        <p class="text1"><b>AWARD WINNING PERSONAL TRAINERS IN INDIA</b></p>
+        <p class="text2"><b>A TEAM OF EXPERTS TO ENSURE YOU SUCCEED</b></p>
+    </div>
+    <div class="features">
+        <div class="container">
+            <div class="row">
+                <div class="card col" style="width:400px">
+                    <img class="card-img-top" src="./gym_page1.png" alt="card_img" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title card_head"><a ><b>PERSONAL TRAINING</b></a></h4>
+                        <p class="card-text">Whether you’re wanting to lose weight, gain muscle, recover from injury or
+                            simply train in a level of privacy that other gyms can’t provide, our expert personal
+                            trainers will work with you to deliver guaranteed, life changing results.</p>
+                        <div class="card_buttons">
+                            <!-- <a href="#training" class="btn btn-primary">EXPLORE TRAINING</a>  -->
+                            <!-- About Us -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col" style="width:400px">
+                    <img class="card-img-top" src="./gym_page_2.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title card_head"><b>CUSTOMISED NUTRITION</b></h4>
+                        <p class="card-text">Having the right nutritional plan is key to achieving the very best results
+                            possible. At Embody Fitness, our qualified nutritionists work with you everyday to ensure
+                            your nutritional plan is customised for you and your goals.</p>
+                        <div class="card_buttons">
+                            <!-- <a href="#training" class="btn btn-primary">EXPLORE NUTRITION</a> -->
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col" style="width:400px">
+                    <img class="card-img-top" src="./gym_page3.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title card_head"><b>ONLINE TRAINING</b></h4>
+                        <p class="card-text">From our team of sports therapists and private treatment rooms, through to
+                            our recovery suites with ice baths and infrared saunas, we provide the most professional pre
+                            or post workout environment for you to be the best version of yourself.</p>
+                        <div class="card_buttons">
+                            <!-- <a href="#" class="btn btn-primary">EXPLORE ONLINE TRAINING</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="transformation">
+        <h1 class="transform_head"><b>ARE YOU READY TO MEET THE NEW YOU?</b></h1>
+        <div class="transformation_image ">
+            <img src="./gym_page4.png" alt="transformation_img" class="transformation_imag" width="60%">
+        </div>
+        <div class="transformation_para">
+            <p>Our 8 & 12 week Body Transformation Programmes are entirely bespoke and designed to suit your specific
+                goals.
+                Through a combination of training, therapy, nutrition, and regular monitoring delivered by a world-class
+                team of fitness trainers and experts, we guarantee outstanding body transformation results.</p>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Read More..</button>    
+            <div id="demo" class="collapse">
+            <p>We’re not just focused on fat loss and being a slave to the number on the scales; our personal training
+                programmes are designed to totally overhaul your mindset and give you a new approach to your fitness
+                regime,
+                diet and how you care for your own personal wellbeing.</p>
+            <p>Living a healthy lifestyle doesn’t just help you look better on the outside; it also makes you feel
+                better on
+                the inside. Whether you want to have more energy to keep up with your kids, the ability to take the
+                stairs
+                without getting out of breath, or to get through the working day with more focus, our team of experts
+                can
+                help you.</p>
+            <p>Whatever your fitness level or experience you’re welcome here. Equally, if you’re an experienced fitness
+                fanatic whose been suffering with a long-term injury or ailment, our team can give you a safe pathway
+                back
+                into enjoying fitness.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="heading" style="text-align: center;">
+        <h1><b>LUXURY GYM LOCATIONS</b></h1>
+    </div>
+    <div class="container d-flex justify-content-evenly pt-5 locations_part">
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="./gym_page5.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h3 class="card-title">LAMBORGHINI BUILDING</h3>
+                <p class="card-text">SHIEK ZAYED ROAD</p>
+                <a href="https://www.google.com/maps/place/Embody+Fitness/@25.128658,55.208441,14z/data=!4m6!3m5!1s0x3e5f6bc7d8b7145f:0x479946316bd06900!8m2!3d25.1286578!4d55.2084406!16s%2Fg%2F11ddzcyfxf?hl=en-US" class="btn btn-primary">FIND US</a><br><br>
+                <div class="call_link">
+                    <a class="btn btn-danger" href="tel:9688981030"><span class="glyphicon glyphicon-earphone"> Call
+                            Us</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="./gym_page6.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h3 class="card-title">ICD BROOKFIELD PLACE</h3>
+                <p class="card-text">DIFC</p>
+                <a href="https://www.google.com/maps?ll=25.21205,55.280566&z=14&t=m&hl=en-US&gl=US&mapclient=embed&cid=9582714802524595934" class="btn btn-primary">FIND US</a><br><br>
+                <div class="call_link">
+                    <a class="btn btn-danger" href="tel:9688981030"><span class="glyphicon glyphicon-earphone"> Call
+                            Us</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="trainers" id="train">
+        <h1><b>OUR TEAM</b></h1>
+        <h4><b>Find the most experienced and knowledgeable personal trainers Dubai has to offer</b></h4>
+        <p style="margin: 40px 80px; font-size: 20px;font-family: Arial, Helvetica, sans-serif;">From ex-Olympic athletes, to world-class coaches and certified nutritionists, our knowledgeable team of experts
+                is what puts us a step above all the many other personal training gyms across the city. They combine their
+                individual specialisms to provide you with the very best support and expertise you need to achieve
+                life-changingresults.</p>
+        <div class="trainers_head" style="text-align: center;">
+            <h1><b> OUR TRAINERS TEAM</b></h1>
+        </div>
+        <div class="trainers_row1 d-flex">
+            <div class="card" style="width:300px; height:300px">
+                <!-- <div class="col"> -->
+                    <img class="card-img-top" src="./trainer1.jpg" alt="trainer1">
+                    <div class="card-body">
+                        <h2 class="card-title">JAMES</h2>
+                        <div class="call_link">
+                            <a class="btn btn-outline-success" href="tel:9688981030"><span class="glyphicon glyphicon-earphone">Book Appointment</span></a>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="card" style="width:300px; height:300px">
+                <img class="card-img-top" src="./trainer2.jpg" alt="trainer1">
+                <div class="card-body">
+                    <h2 class="card-title">KATE</h2>
+                    <div class="call_link">
+                        <a class="btn btn-outline-success" href="tel:9688981030"><span class="glyphicon glyphicon-earphone">Book Appointment</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width:300px; height:300px">
+                <img class="card-img-top" src="./trainer3.jpg" alt="trainer1">
+                <div class="card-body">
+                    <h2 class="card-title">MAX</h2>
+                    <div class="call_link">
+                        <a class="btn btn-outline-success" href="tel:9688981030"><span class="glyphicon glyphicon-earphone">Book Appointment</span></a>
+                    </div>
+                </div>
+            </div>
+            <a id="training"></a>
+            <div class="card" style="width:300px; height:300px">
+                <img class="card-img-top" src="./trainer4.jpg" alt="trainer1">
+                <div class="card-body">
+                    <h2 class="card-title">JULIA</h2>
+                    <div class="call_link">
+                        <a class="btn btn-outline-success" href="tel:9688981030"><span class="glyphicon glyphicon-earphone">Book Appointment</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trainers_row2 d-flex">
+            <div class="card" style="width:300px; height:300px">
+                <img class="card-img-top" src="./trainer5.jpg" alt="trainer1">
+                <div class="card-body">
+                    <h2 class="card-title">FADEL</h2>
+                    <div class="call_link">
+                        <a class="btn btn-outline-success" href="tel:9688981030"><span class="glyphicon glyphicon-earphone">Book Appointment</span></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width:300px; height:300px">
+                <img class="card-img-top" src="./trainer6.jpg" alt="trainer1">
+                <div class="card-body">
+                    <h2 class="card-title">BEC</h2>
+                    <div class="call_link">
+                        <a class="btn btn-outline-success" href="tel:9688981030"><span class="glyphicon glyphicon-earphone">Book Appointment</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:300px; height:300px">
+                <img class="card-img-top" src="./trainer7.jpg" alt="trainer1">
+                <div class="card-body">
+                    <h2 class="card-title">HARJEET</h2>
+                    <div class="call_link">
+                        <a class="btn btn-outline-success" href="tel:9688981030"><span class="glyphicon glyphicon-earphone">Book Appointment</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width:300px; height:300px">
+                <img class="card-img-top" src="./trainer8.jpg" alt="trainer1">
+                <div class="card-body">
+                    <h2 class="card-title">JOHN</h2>
+                    <div class="call_link">
+                        <a class="btn btn-outline-success" href="tel:9688981030"><span class="glyphicon glyphicon-earphone">Book Appointment</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer1 d-flex">
+            <img src="./embody_logo.png" alt="logo">
+            <div class="text_connect" style="padding-left: 60%; padding-top: 10px;">
+                <p>CONNECT:</p>
+            </div>
+            <div class="logos p-2">
+                <a href="https://www.youtube.com/channel/UC-6eLMch9Q_E3EX-iqR-Ilw"><img src="./3228540_app_b_w_logo_media_popular_icon.png" width="20px" height="30px"></a>
+                <a href=""><img src="./3228543_app_b_w_logo_media_popular_icon.png" width="20px" height="30px"></a>
+                <a href="https://www.instagram.com/embodyfitnessdxb/"><img src="./3228551_app_b_w_instagram_logo_media_icon.png" width="20px" height="30px"></a>
+                <a href="https://www.facebook.com/embodyfitnessDXB/?ref=hl"><img src="./3228552_app_b_w_facebook_logo_media_icon.png" width="20px" height="30px"></a>
+            </div>
+            </div>
+        <div class="footer2">
+            <p class="text">TRANSFORMING BODIES TRANSFORMING LIVES</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

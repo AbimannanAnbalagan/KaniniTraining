@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signin_page.css">
+    <script src="signin.js">
+    </script>
+        <title>signin page</title>
+    </head>
+    <body>
+       <div class="container">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+
+                    
+                    <button type="button" class="toggle-btn" onclick="login()">login</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+            
+           
+            <div class="social-media">
+                <img src="./WhatsApp Image 2023-03-01 at 07.17.05.jpg">
+                <img src="./insta.jpg">
+                <img src="./twitter.jpg">
+            </div>
+       
+        <form class="login-form" id="login">
+            <input type="text" class="form-field" placeholder="Username" id="name" required>
+            <input type="password" class="form-field" placeholder="Password" id="psw" required>
+
+            <input type="checkbox" class="checkbox"><span>Remember Password</span>
+            <button type="submit" class="submit" onclick="loginValidate()">LogIn</button>
+        </form>
+
+
+        <form class="login-form" id="register">
+            <input type="text" class="form-field" placeholder="Username" id="name1" required>
+            <input type="email" class="form-field" placeholder="Email Id" id="email" required>
+            <input type="password" class="form-field" placeholder="Password" id="psw1" required>
+           
+            <input type="checkbox" class="checkbox"><span>Accept Terms &Conditions</span>
+            <button type="submit" class="submit" onclick="registerValidate()"  >Register</button>
+        </form>
+  
+        </div>
+        </div>
+    </div>
+        
+       <script> 
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+function register(){
+    x.style.left="-400px";
+    y.style.left="50px";
+    z.style.left="110px";
+}
+function login(){
+    x.style.left="50px";
+    y.style.left="450px";
+    z.style.left="0px";
+}
+function loginValidate()
+{
+let name_pattern=/[a-zA-Z\s]/g;
+// let psw_pattern=/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/;
+let psw_pattern=/[a-zA_Z]/g;
+  
+var input_name=document.getElementById('name').value;
+var input_psw=document.getElementById('psw').value;
+
+if(input_name.match(name_pattern)==null){
+   
+    alert("Enter a valid Username")
+    
+}
+else if(input_psw.match(psw_pattern)==null){
+    alert("Enter a valid password")
+    
+}
+else{
+
+
+    alert("login successfully!!");
+    window.location.href(Gym_page.html)
+
+}
+}
+
+function registerValidate()
+{
+    let name_pattern1=/[a-zA-Z\s]/g;
+    // let psw_pattern1=/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/;
+    let email_pattern=/[a-zA-Z0-9]+@[a-z]+\.[a-z]+/g;
+    let psw_pattern1=/[a-zA_Z]/g;
+
+    var input_name1=document.getElementById('name1').value;
+    var input_psw1=document.getElementById('psw1').value;
+    var input_email=document.getElementById('email').value;
+
+    if(input_name1.match(name_pattern1)==null){
+   
+        alert("Enter a valid Username")
+       
+    }
+    else if(input_psw1.match(psw_pattern1)==null){
+        alert("Enter a valid password")
+       
+    }
+    else if(input_email.match(email_pattern)==null){
+        alert("Enter a valid E-mail Id")
+       
+
+    }
+    else{
+    
+  
+        alert("registered  successfully!!");
+        
+    
+}
+}
+
+        </script>
+    </body>
+    </head>
+</html>

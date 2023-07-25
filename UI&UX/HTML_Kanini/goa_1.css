@@ -1,0 +1,46 @@
+header{
+    background-color: bisque;
+}
+.head{
+    display: flex;
+    align-items: center;
+}
+.topics{
+    float:left;
+
+}
+.searchbar{
+    padding-left: 400px;
+}
+.pic2{
+    padding-left: 400px;
+}
+.l1 li{
+    display: inline;
+
+}
+.l1 li a{
+    background-color: rgb(255, 170, 0);
+    text-decoration: none;
+    color: white;
+    padding: 20px 80px 20px 80px;    
+}
+.lat_updandgif{
+    display:flex;
+
+}
+.list2 li{
+    display:inline;
+    margin-left: 0%;
+}
+.list2 li a{
+    background-color: rgb(0, 255, 179);
+    text-decoration: none;
+    color: white;
+    padding: 1% 1%;
+    font-size: 15px;
+}
+.split2{
+    display:flex;
+
+}

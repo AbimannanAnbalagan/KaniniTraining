@@ -1,0 +1,35 @@
+
+.centre_box{
+    background-image:linear-gradient(yellow,black) ;
+    padding: 4%;
+    max-width: 600px;
+    border-right: 0.5rem solid #dadadae5;
+    border-bottom: 0.5rem solid #4b4848e5;
+    border-radius: 1rem;
+  }
+  .full_page h1{
+    color: aliceblue;
+
+  }
+  body{
+    background-image: linear-gradient( black,yellow) ;
+    margin:10% 20% 23% 25%;
+  }
+.inputs input{
+  margin-top: 5%;
+  flex-basis: 50%;
+  flex:1%;
+
+  }
+.input_img{
+  display:flex;
+}
+.image{
+  margin-left: 10%;
+
+}
+.inputs input{
+  padding: 3%;
+  border-radius: 4%;
+}
+

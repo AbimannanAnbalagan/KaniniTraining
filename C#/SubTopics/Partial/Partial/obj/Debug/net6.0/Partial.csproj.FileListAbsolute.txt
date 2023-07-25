@@ -1,0 +1,15 @@
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\Partial.csproj.AssemblyReference.cache
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\Partial.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\Partial.AssemblyInfoInputs.cache
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\Partial.AssemblyInfo.cs
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\Partial.csproj.CoreCompileInputs.cache
+D:\c#\New folder\Partial\Partial\bin\Debug\net6.0\Partial.exe
+D:\c#\New folder\Partial\Partial\bin\Debug\net6.0\Partial.deps.json
+D:\c#\New folder\Partial\Partial\bin\Debug\net6.0\Partial.runtimeconfig.json
+D:\c#\New folder\Partial\Partial\bin\Debug\net6.0\Partial.dll
+D:\c#\New folder\Partial\Partial\bin\Debug\net6.0\Partial.pdb
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\Partial.dll
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\refint\Partial.dll
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\Partial.pdb
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\Partial.genruntimeconfig.cache
+D:\c#\New folder\Partial\Partial\obj\Debug\net6.0\ref\Partial.dll

@@ -1,0 +1,15 @@
+D:\c#\New folder\Enumerator\FileOperation\bin\Debug\net6.0\FileOperation.exe
+D:\c#\New folder\Enumerator\FileOperation\bin\Debug\net6.0\FileOperation.deps.json
+D:\c#\New folder\Enumerator\FileOperation\bin\Debug\net6.0\FileOperation.runtimeconfig.json
+D:\c#\New folder\Enumerator\FileOperation\bin\Debug\net6.0\FileOperation.dll
+D:\c#\New folder\Enumerator\FileOperation\bin\Debug\net6.0\FileOperation.pdb
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\FileOperation.csproj.AssemblyReference.cache
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\FileOperation.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\FileOperation.AssemblyInfoInputs.cache
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\FileOperation.AssemblyInfo.cs
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\FileOperation.csproj.CoreCompileInputs.cache
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\FileOperation.dll
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\refint\FileOperation.dll
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\FileOperation.pdb
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\FileOperation.genruntimeconfig.cache
+D:\c#\New folder\Enumerator\FileOperation\obj\Debug\net6.0\ref\FileOperation.dll

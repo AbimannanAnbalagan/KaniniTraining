@@ -1,0 +1,5 @@
+D:\c#\UnitTesting\MUnit\obj\Debug\net7.0\NUnit.csproj.AssemblyReference.cache
+D:\c#\UnitTesting\MUnit\obj\Debug\net7.0\NUnit.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\UnitTesting\MUnit\obj\Debug\net7.0\NUnit.AssemblyInfoInputs.cache
+D:\c#\UnitTesting\MUnit\obj\Debug\net7.0\NUnit.AssemblyInfo.cs
+D:\c#\UnitTesting\MUnit\obj\Debug\net7.0\NUnit.csproj.CoreCompileInputs.cache

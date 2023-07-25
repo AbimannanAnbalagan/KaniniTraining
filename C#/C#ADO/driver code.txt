@@ -1,0 +1,122 @@
+Driver code:
+      using csharpADO;
+using System.Security.Cryptography.X509Certificates;
+
+class program
+{
+    public static void Main(string[] args)
+    {
+        string cnnstr = "Data source=ABI-A\\SQLEXPRESS; database = ado; integrated security = SSPI";
+
+        ADO ado = new ADO();
+        ado.OpenConn(cnnstr);
+        int n = 0;
+        bool result = true;
+        Console.WriteLine("To Exit Enter 1 \n" +
+                               "To Create Account Enter 2\n" +
+                               "To Place A Order Enter 3\n");
+        int value = int.Parse(Console.ReadLine());
+        while (result) 
+        {
+            if ( value == 1 ) 
+            {
+                ado.CloseConn();
+                result= false;
+            }
+            else if(value == 2 )
+            {
+                Console.WriteLine("Enter your name: ");
+                string name = Console.ReadLine();
+                Console.WriteLine("Enter the password: ");
+                string password = Console.ReadLine();
+                Console.WriteLine("Enter phone number: ");
+                long phone_num = Convert.ToInt64(Console.ReadLine());
+                Console.WriteLine("Enter address: ");
+                string address = Console.ReadLine();
+                ado.create_account(name ,password, phone_num , address);
+                value = 4;
+            }
+            else if(value == 3)
+            {
+                
+                Console.WriteLine("Before place a order Login your Account: ");
+                Console.Write("Enter CustomerId: ");
+                string customerId = Console.ReadLine();
+                Console.Write("Enter Password: ");
+                string password = Console.ReadLine();
+                value =  ado.Check(customerId, password);
+                Console.WriteLine(value);
+            }
+            /*
+            else if(value == 4 )
+            {
+                //Console.Write("Enter 1 to search by 'product type': ");
+                                  //"Enter 2 to search by product id: ");
+                //int choice = int.Parse(Console.ReadLine());
+                
+                if (choice == 1)
+                {
+                    ado.ProductTypes();
+                    Console.Write("Enter the product type: ");
+                    string type = Console.ReadLine();
+                    ado.SearchByType(type);
+                    Console.WriteLine(
+                                      "For billing Enter 2 \n " +
+                                      "To End the purchase Enter 3\n"+
+                                      "Press any other key to search about other products");
+                    Console.WriteLine("Enter the product Id :");
+                    int descision = int.Parse(Console.ReadLine());
+                    if(descision == 1)
+                    {
+                        Console.WriteLine("Enter Quantity:");
+                        int quantity = int.Parse(Console.ReadLine());
+                        ado.sales();
+                    }
+                    else if (descision == 2)
+                    {
+                        value = 5;
+                    }
+
+                }
+                else if(choice == 2)
+                {
+                    Console.Write("Enter ProductId");
+                    int id = int.Parse(Console.ReadLine());
+                    ado.SearchById(id);
+                } 
+             
+            }
+            */
+            else if(value == 4)
+            {
+                ado.ProductTypes();
+                Console.Write("Enter the Product type: ");
+                string type = Console.ReadLine();
+                ado.SearchByType(type);
+                Console.WriteLine("Enter the Product Id to be purchased: ");
+                int prod_id = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter the quantity: ");
+                int quantity = int.Parse(Console.ReadLine());
+                ado.sales(prod_id , quantity);
+                Console.WriteLine("Enter 1 to generate bill \n Enter 2 to make another purchase \n");
+                int choice = int.Parse(Console.ReadLine());
+                if (choice == 1)
+                {
+                    value = 5;
+                }
+                
+
+            }
+            else if (value == 5)
+            {
+                ado.Billing();
+                Console.WriteLine("Enter 1 to exit");
+                value = int.Parse(Console.ReadLine());
+
+            }
+            
+        }
+        
+        
+    } 
+}

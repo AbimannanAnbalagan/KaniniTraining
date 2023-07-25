@@ -1,0 +1,15 @@
+D:\c#\New folder\Basic Programs\Basic Programs\bin\Debug\net6.0\Basic Programs.exe
+D:\c#\New folder\Basic Programs\Basic Programs\bin\Debug\net6.0\Basic Programs.deps.json
+D:\c#\New folder\Basic Programs\Basic Programs\bin\Debug\net6.0\Basic Programs.runtimeconfig.json
+D:\c#\New folder\Basic Programs\Basic Programs\bin\Debug\net6.0\Basic Programs.dll
+D:\c#\New folder\Basic Programs\Basic Programs\bin\Debug\net6.0\Basic Programs.pdb
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\Basic Programs.csproj.AssemblyReference.cache
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\Basic Programs.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\Basic Programs.AssemblyInfoInputs.cache
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\Basic Programs.AssemblyInfo.cs
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\Basic Programs.csproj.CoreCompileInputs.cache
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\Basic Programs.dll
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\refint\Basic Programs.dll
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\Basic Programs.pdb
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\Basic Programs.genruntimeconfig.cache
+D:\c#\New folder\Basic Programs\Basic Programs\obj\Debug\net6.0\ref\Basic Programs.dll

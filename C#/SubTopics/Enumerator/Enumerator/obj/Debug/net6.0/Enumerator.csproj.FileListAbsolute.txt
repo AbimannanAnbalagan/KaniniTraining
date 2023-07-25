@@ -1,0 +1,15 @@
+D:\c#\New folder\Enumerator\Enumerator\bin\Debug\net6.0\Enumerator.exe
+D:\c#\New folder\Enumerator\Enumerator\bin\Debug\net6.0\Enumerator.deps.json
+D:\c#\New folder\Enumerator\Enumerator\bin\Debug\net6.0\Enumerator.runtimeconfig.json
+D:\c#\New folder\Enumerator\Enumerator\bin\Debug\net6.0\Enumerator.dll
+D:\c#\New folder\Enumerator\Enumerator\bin\Debug\net6.0\Enumerator.pdb
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\Enumerator.csproj.AssemblyReference.cache
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\Enumerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\Enumerator.AssemblyInfoInputs.cache
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\Enumerator.AssemblyInfo.cs
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\Enumerator.csproj.CoreCompileInputs.cache
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\Enumerator.dll
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\refint\Enumerator.dll
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\Enumerator.pdb
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\Enumerator.genruntimeconfig.cache
+D:\c#\New folder\Enumerator\Enumerator\obj\Debug\net6.0\ref\Enumerator.dll

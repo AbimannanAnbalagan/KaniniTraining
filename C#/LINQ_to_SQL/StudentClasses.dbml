@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="student" Class="StudentClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ABI-A\SQLEXPRESS;Initial Catalog=student;Integrated Security=True" SettingsObjectName="LINQ_to_SQL.Properties.Settings" SettingsPropertyName="studentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.stud_details" Member="stud_details">
+    <Type Name="stud_detail">
+      <Column Name="rno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.student_details" Member="student_details">
+    <Type Name="student_detail">
+      <Column Name="rno" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="student_detail_student_mark" Member="student_marks" ThisKey="rno" OtherKey="rno" Type="student_mark" />
+    </Type>
+  </Table>
+  <Table Name="dbo.student_marks" Member="student_marks">
+    <Type Name="student_mark">
+      <Column Name="rno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="student_detail_student_mark" Member="student_detail" ThisKey="rno" OtherKey="rno" Type="student_detail" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

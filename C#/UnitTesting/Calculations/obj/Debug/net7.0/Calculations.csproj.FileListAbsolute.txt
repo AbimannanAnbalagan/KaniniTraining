@@ -1,0 +1,12 @@
+D:\c#\UnitTesting\Calculations\bin\Debug\net7.0\Calculations.deps.json
+D:\c#\UnitTesting\Calculations\bin\Debug\net7.0\Calculations.dll
+D:\c#\UnitTesting\Calculations\bin\Debug\net7.0\Calculations.pdb
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\Calculations.csproj.AssemblyReference.cache
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\Calculations.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\Calculations.AssemblyInfoInputs.cache
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\Calculations.AssemblyInfo.cs
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\Calculations.csproj.CoreCompileInputs.cache
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\Calculations.dll
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\refint\Calculations.dll
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\Calculations.pdb
+D:\c#\UnitTesting\Calculations\obj\Debug\net7.0\ref\Calculations.dll

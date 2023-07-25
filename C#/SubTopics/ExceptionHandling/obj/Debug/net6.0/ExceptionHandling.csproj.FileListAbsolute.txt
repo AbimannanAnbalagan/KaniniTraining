@@ -1,0 +1,15 @@
+D:\c#\New folder\Enumerator\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.exe
+D:\c#\New folder\Enumerator\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.deps.json
+D:\c#\New folder\Enumerator\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.runtimeconfig.json
+D:\c#\New folder\Enumerator\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.dll
+D:\c#\New folder\Enumerator\ExceptionHandling\bin\Debug\net6.0\ExceptionHandling.pdb
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.csproj.AssemblyReference.cache
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.AssemblyInfoInputs.cache
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.AssemblyInfo.cs
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.csproj.CoreCompileInputs.cache
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.dll
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\refint\ExceptionHandling.dll
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.pdb
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ExceptionHandling.genruntimeconfig.cache
+D:\c#\New folder\Enumerator\ExceptionHandling\obj\Debug\net6.0\ref\ExceptionHandling.dll

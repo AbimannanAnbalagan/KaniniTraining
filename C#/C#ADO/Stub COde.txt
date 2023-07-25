@@ -1,0 +1,167 @@
+Stub COde:
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Collections;
+
+namespace csharpADO
+{
+    internal class ADO
+    {
+        SqlConnection Conn;
+       
+        string prod_name;
+        int cost = 0;
+        int prod_id;
+        public void OpenConn(string cnnstr)
+        {
+            Conn = new SqlConnection(cnnstr);
+            Conn.Open();
+            Console.WriteLine("Opened");
+        }
+        public void create_account(string name,string password, long phone_no , string address)
+        {
+            SqlCommand cmd = new SqlCommand($"insert into Customer values('{name}','{password}',{phone_no},'{address}',0)", Conn);
+            //SqlCommand cmd = new SqlCommand("insert into Customer values("name","+phone_no+",0)", Conn);
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("Account Create Successfully");
+        }
+        public int Check(string Id , string password)
+        {
+            int sts;
+            int value;
+            SqlCommand cmd = new SqlCommand($"Select count(cust_id) from customer where cust_id='{Id}' and password='{password}'",Conn);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            
+            while (sdr.Read())
+            {
+                sts = (int)sdr[0];
+                if (sts == 0)
+                {
+                    Console.WriteLine("Enter the valid userid password");
+                    value = 3;
+                    sdr.Close();
+                    return value;
+                }                
+            }
+            value = 4;
+            sdr.Close();
+            return value;
+        }
+
+        public void ProductTypes()
+        {
+            SqlCommand cmd = new SqlCommand("Select distinct(prod_type) from product;",Conn);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            if (sdr.HasRows)
+            {
+                while (sdr.Read())
+                {
+                    Console.WriteLine(sdr[0]);
+                }
+            }
+            sdr.Close();
+        }
+
+        public void SearchByType(string type)
+        {
+            SqlCommand cmd = new SqlCommand($"Select prod_name, cost, stock , prod_id from product where prod_type = '{type}'",Conn);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            if (sdr.HasRows)
+            {
+                while (sdr.Read())
+                {
+                    Console.WriteLine($"Product Name: {sdr[0]} \t Product Id: {sdr[3]} \nCost per unit: {sdr[1]} \nAvailable Stocks: {sdr[2]}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No products in the selected Product type");
+            }
+            sdr.Close();
+        }
+        public void SearchById(int id)
+        {
+            SqlCommand cmd = new SqlCommand($"Select prod_name, cost, stock from product where prod_id ={id}", Conn);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                Console.WriteLine($"Product Name: {sdr[0]} \nCost per unit: {sdr[1]} \nAvailable Stocks: {sdr[2]}");
+            }
+            sdr.Close();
+        }
+
+        public void sales(int prod_id, int quantity)
+        {
+            this.prod_id = prod_id;
+            
+            SqlCommand cmd = new SqlCommand($"Select prod_name , cost from product where prod_id = {prod_id};", Conn);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            sdr.Read();
+            prod_name = sdr[0].ToString();
+            Console.WriteLine($"Prod_name : {prod_name}");
+            cost = (int)(decimal)sdr[1];
+            Console.WriteLine($"cost : {cost}");
+            sdr.Close();
+            salesadd(quantity);
+        }
+        
+        public void salesadd(int quantity)
+        {
+            SqlCommand cmd1 = new SqlCommand($"Insert into sales (prod_name,cost) values('{prod_name} * {quantity}',{cost*quantity})",Conn);
+            cmd1.ExecuteNonQuery();
+            Console.WriteLine("Row in sales Table added");
+            ProdUpd(quantity);
+        }
+        public void ProdUpd(int quantity)
+        {
+            SqlCommand cmd = new SqlCommand($"update Product set stock = (select stock from Product where prod_id = {prod_id} ) - {quantity} where prod_id = {prod_id};",Conn);
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("row updated");
+        }
+        public void Billing()
+        {
+            SqlCommand cmd = new SqlCommand($" Select prod_name , cost from sales", Conn);
+            SqlDataReader sdr;
+            sdr = cmd.ExecuteReader();
+            if (!sdr.HasRows)
+            {
+                while (sdr.Read())
+                {
+                    Console.WriteLine($"Product * Quantity : {sdr[0]}, Cost : {sdr[1]}");
+                }
+            }
+            sdr.Close();
+            BillingFinal();
+        }
+        public void BillingFinal() 
+        {
+            SqlCommand cmd = new SqlCommand($"Select sum(cost) from sales",Conn);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            sdr.Read();
+            Console.WriteLine($"Total Cost : {sdr[0]}");
+            sdr.Close();
+        }
+
+        public void CloseConn()
+        {
+            SqlCommand cmd = new SqlCommand("delete from sales",Conn);
+            cmd.ExecuteNonQuery();
+            Conn.Close();
+            Console.WriteLine("Closed");
+        }
+    }
+}

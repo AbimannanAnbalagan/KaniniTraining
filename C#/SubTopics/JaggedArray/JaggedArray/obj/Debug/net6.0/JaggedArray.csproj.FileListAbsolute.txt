@@ -1,0 +1,15 @@
+D:\c#\New folder\JaggedArray\JaggedArray\bin\Debug\net6.0\JaggedArray.exe
+D:\c#\New folder\JaggedArray\JaggedArray\bin\Debug\net6.0\JaggedArray.deps.json
+D:\c#\New folder\JaggedArray\JaggedArray\bin\Debug\net6.0\JaggedArray.runtimeconfig.json
+D:\c#\New folder\JaggedArray\JaggedArray\bin\Debug\net6.0\JaggedArray.dll
+D:\c#\New folder\JaggedArray\JaggedArray\bin\Debug\net6.0\JaggedArray.pdb
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\JaggedArray.csproj.AssemblyReference.cache
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\JaggedArray.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\JaggedArray.AssemblyInfoInputs.cache
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\JaggedArray.AssemblyInfo.cs
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\JaggedArray.csproj.CoreCompileInputs.cache
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\JaggedArray.dll
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\refint\JaggedArray.dll
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\JaggedArray.pdb
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\JaggedArray.genruntimeconfig.cache
+D:\c#\New folder\JaggedArray\JaggedArray\obj\Debug\net6.0\ref\JaggedArray.dll

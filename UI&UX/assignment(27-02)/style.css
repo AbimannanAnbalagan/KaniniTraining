@@ -1,0 +1,33 @@
+h3{
+    color:white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table,th,td{
+    border:1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 7px;
+    color: blue;
+    border-radius: 5px;
+    width: 50%;
+    font-weight: bold;
+}
+body{
+    background-color: blue;
+}
+
+button{
+    color: #08088a;
+    font-weight: bold;
+    margin-left: 47%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+#result{
+    text-align: center;
+    color: white;
+}

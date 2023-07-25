@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <label>age</label>
+    <input type="numer" id="age">
+    <p id="op" onclick="print()">Click</p>
+    
+    <script>
+        // array
+        // let array=['abi','mozhi']
+        // console.log(array[0])
+
+        // Func
+        function print()
+        {
+            //ternary operator
+           let age= document.getElementById("age").value;
+           result= age >=18 ? "adult" : "minor";
+           document.getElementById("op").innerHTML="You ARE " + result;
+        }
+    </script>
+
+
+</body>
+</html>

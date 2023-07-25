@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/s">
+    </head>
+    <body>
+        
+        <div>
+        <form name="Registration" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br>
+
+        <label for ="mail">Email:</label>
+        <input type="email" id="mail">
+        <br>
+        <label for="Pswd">Password:</label>
+        <input type="password" id="Pswd">
+        <br>
+        <label for="npsw">Confirm Password:</label>
+        <input type="text" id="npsw">
+        <br>
+        <fieldset>
+            <legend>Home Way</legend>
+        <label for="adrs">Address</label>
+        <textarea rows="4" cols="8" id="adrs"></textarea>
+        <br></fieldset>
+        <label for="num">Age:</label>
+        <input type="number" id="num" min="1" max="99">
+        <br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender"><label for="female">FeMale</label>
+        <br>
+        <label>Games:</label>
+            <input type="checkbox" id="crick"><label for="crick">Cricket</label>
+            <input type="checkbox"><label>Shuttle Batminton</label>
+            <input type="checkbox"><label>Chess</label>
+        <br>
+        <label for="cont">Visited countries:</label>
+            <select id="cont" multiple size="1">
+                <option>Malaysia</option>
+                <option>Singapore</option>
+                <option>Sri Lanka</option>
+            </select>
+        <br>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob">
+        <br>
+        <label for="color">FVT Color:</label>
+        <input type="color" id="color">
+        <br>
+        <button onclick="alert('u r pressing alert button')">Alert</button>
+        <br>
+        <input type="submit" value="submit">
+        <br>
+        <label>Score:</label>0
+        <input type="range" min="0" max="100" >100
+   
+    </form>
+    </div>
+    </body>
+</html>

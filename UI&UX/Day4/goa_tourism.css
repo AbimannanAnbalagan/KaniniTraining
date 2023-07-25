@@ -1,0 +1,73 @@
+.logo_img{
+    float:left;
+    width:8%;
+}
+.headings{
+    float:left;
+    font-size: 20px;
+    width:20%;
+    padding: 1% 0%;
+}
+.headings .h2{
+    color: chocolate;
+}
+.search_box{
+    float:left;
+    padding-left:40%;
+    padding-top:2%;
+}
+.goa_img{
+    float:right;
+    padding-left: 5%;
+}
+
+.main_menu{
+    float:left;
+    padding-left: 0%;}
+
+.list1{
+    float:left;
+
+}
+.list1 ul li{
+    float:left;
+    list-style: none;
+    padding-left: 5%;
+}
+.list1 ul li a{
+    float:left;
+    text-decoration: none;
+
+}
+
+
+.list2{
+    float:left;
+    padding-left: 0%;
+    
+}
+.list2 ul li{
+    float:left;
+    list-style: none;
+    padding-top: 1%;
+    
+    
+}
+.list2 ul li a{
+    float:left;
+    text-decoration: none;
+    padding-left: 1%;
+    background-color: coral;
+    border-radius: 5%;
+    display: inline;
+
+}
+.main_image{
+    padding-top: 10%;
+}
+
+.list1 ul li a{
+    float: left;
+    margin-left: 20px;
+}
+

@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
+import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
-  // <h1>React Example</h1>
+// const head1 = 
+// (
+// <div>
+// <h1>React Example h1</h1> <h2>React Example h2</h2> 
+// </div>
+// );
+
+root.render
+(
+  // head1
   <App/>
 );
 
